@@ -49,7 +49,7 @@ This is the main facade to be used in ScriptRunner scripts.
 ## createBranch(Integer, String, String)
 Creates a branch in the repository.
  <br>
- Branch can be created in a repository which belongs to an integration, otherwise GIJException.
+ Branch can be created in a repository which belongs to an integration, otherwise GIJException is thrown.
  <br><br>
  This is a sync operation.
  <br>
@@ -125,7 +125,7 @@ Connects a new repository.
 ## deleteBranch(Integer, String)
 Deletes the branch.
  <br>
- Branch can be deleted from a repository which belongs to an integration, otherwise GIJException.
+ Branch can be deleted from a repository which belongs to an integration, otherwise GIJException is thrown.
  <br><br>
  This is an async operation.
  <br>
@@ -176,7 +176,7 @@ Deletes the existing repository from the Git Integration for Jira app repository
 ## doReindex(Integer)
 Starts the reindex process in a separate thread and returns the result immediately.
  <br>
- Reindex operation can be executed just by admin or a user having access to all repositories.
+ Reindex operation can be executed only by admin or a user having access to all repositories.
  <br><br>
  This is an async operation.
  <br>
@@ -283,6 +283,7 @@ Returns commits information (including files) associated with the issue.
 
 ### **Parameters**
 * `issueKey`: Jira issue key. The issueKey must be valid and existent. Ex.: "TST-234"
+* `showFiles`: whether an information about files changed in the commit is collected and returned
 
 ### **Throws**
 * [GIJException](../exceptions/GIJException.html) 
@@ -398,13 +399,17 @@ Changes the commit issues associations.
 
 ## updateIntegration(Integer, IntegrationRequest)
 Updated an integration.
+ <br><br>
+ This is a sync operation.
+ <br>
+ See [script example](/git-integration-for-jira-self-managed/javadoc/examples/scriptrunner-example-update-integration.groovy).
 
 ### **Parameters**
 * `id`: integration id to be updated
 * `repositoryWithNewParams`: new values for parameters to be changed
 
 ### **Returns**
-
+- the integration updated
 
 ### **Throws**
 * [GIJException](../exceptions/GIJException.html) 

@@ -24,7 +24,7 @@ Contains status of a reindex.
 | Type and modifiers | Method signature |
 | --- | --- |
 | `public`  *[Double](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html)*  | [getCompletionPercentage](#getcompletionpercentage)() |
-| `public` `long` | [getErrorsNumber](#geterrorsnumber)() |
+| `public` `long` | [getErrorsCount](#geterrorscount)() |
 | `public`  *[List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)* <[ReindexLogEntry](../../services/async/ReindexLogEntry.html)> | [getMessages](#getmessages)() |
 | `public`  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  | [getThreadId](#getthreadid)() |
 | `public` `boolean` | [isFinished](#isfinished)() |
@@ -48,7 +48,7 @@ Returns completion percentage.
 
 
 
-## getErrorsNumber()
+## getErrorsCount()
 Returns number of errors appeared during the reindex.
 
 

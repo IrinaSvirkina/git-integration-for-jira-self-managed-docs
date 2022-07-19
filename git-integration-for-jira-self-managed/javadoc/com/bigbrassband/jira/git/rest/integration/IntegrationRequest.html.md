@@ -132,12 +132,14 @@ Returns Folder Depth property. Is used for tracked folders only.
 
 
 ## getGitViewerEnabled()
-
+Returns whether Repository Browser feature is enabled.
+ <br>
+ For more information, see section, [Repository Browser](/git-integration-for-jira-data-center/repository-browser-gij-self-managed).
 
 
 
 ## getGlobal()
-
+Returns whether the integration repositories are visible for all projects.
 
 
 
@@ -158,9 +160,6 @@ Returns password encrypted.
 
 ## getPat()
 Returns PAT encrypted.
-
-### **Returns**
-PAT encrypted.
 
 
 
@@ -200,7 +199,11 @@ Returns the property "Send email notifications" value.
 
 
 ## getSmartCommitsEnabled()
-
+Returns whether smart commits processing for the integration repositories is enabled.
+ <br>
+ GIJFacade.createIntegration(): Optional. Is true by default.
+ <br>
+ GIJFacade.updateIntegration(): Optional.
 
 
 
@@ -236,6 +239,8 @@ Returns username for the git host.
 
 ## initPassword(String)
 Sets password as is. Use the method when none encryption is required.
+ <br>
+ GIJFacade requires an IntegrationRequest with an encrypted password, so use setPassword() instead of initPassword().
 
 ### **Parameters**
 * `password`: password
@@ -244,6 +249,8 @@ Sets password as is. Use the method when none encryption is required.
 
 ## initPat(String)
 Sets PAT as is. Use the method when none encryption is required.
+ br>
+ GIJFacade requires an IntegrationRequest with an encrypted PAT, so use setPat() instead of initPat().
 
 ### **Parameters**
 * `pat`: 
@@ -319,7 +326,7 @@ Sets SSL Verify setting.
 
  GIJFacade.createIntegration(): Optional. The default value for this setting is *false*.
  <br>
- GIJFacade.updateIntegration(): is not allowed to be changed.
+ GIJFacade.updateIntegration(): Optional.
 
 ### **Parameters**
 * `disableSslVerification`: 
@@ -366,12 +373,22 @@ Sets Folder Depth property. Is used for tracked folders only.
 
 
 ## setGitViewerEnabled(Boolean)
+Enables or disables Repository Browser feature.
 
+ GIJFacade.createIntegration(): Optional. Is true by default.
+ <br>
+ GIJFacade.updateIntegration(): Optional.
+
+### **Parameters**
+* `gitViewerEnabled`: new value for "Repository Browser" parameter
 
 
 
 ## setGlobal(Boolean)
+If set to true, the projectMappingIds parameter is ignored. Otherwise, the projectMappingIds parameter value(s) are applied.
 
+### **Parameters**
+* `global`: new value for "Associate with all projects" property
 
 
 
@@ -403,7 +420,11 @@ Sets the Origin of the Integration.
 
 
 ## setPassword(String)
-Sets new password for the git host. Leave blank if 2FA is enabled.
+Sets new password for the git host. Leave blank and use PAT if 2FA is enabled.
+ The IN password will be encrypted.
+ Use initPassword() when none encryption is required.
+ <br>
+ GIJFacade requires an IntegrationRequest with an encrypted password, so use setPassword() instead of initPassword().
 
 ### **Parameters**
 * `password`: new password
@@ -413,6 +434,8 @@ Sets new password for the git host. Leave blank if 2FA is enabled.
 ## setPat(String)
 Sets the PAT (personal access token) to be used to connect the Integration. The IN PAT will be encrypted.
  Use initPat() when none encryption is required.
+ <br>
+ GIJFacade requires an IntegrationRequest with an encrypted PAT, so use setPat() instead of initPat().
 
 ### **Parameters**
 * `pat`: pat
@@ -481,7 +504,10 @@ Sets the property "Send email notifications" for the Integration.
 
 
 ## setSmartCommitsEnabled(Boolean)
+Enables or disables smart commits processing.
 
+### **Parameters**
+* `smartCommitsEnabled`: new value for "Smart Commits" parameter
 
 
 
@@ -538,7 +564,7 @@ Sets type of the Integration. Available values are the following:
 
 
 ## setUsername(String)
-Sets as username for the git host. Leave blank if 2FA is enabled.
+Sets as username for the git host. Leave blank and use PAT if 2FA is enabled.
 
 ### **Parameters**
 * `username`: 

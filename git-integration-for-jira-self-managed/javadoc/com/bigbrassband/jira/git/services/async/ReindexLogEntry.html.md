@@ -63,7 +63,7 @@ If an exception was thrown then the details contain the exception stacktrace.
 
 
 ## getInsertionTime()
-Unix time of the message.
+Unix time of the message measured in milliseconds.
 
 
 
