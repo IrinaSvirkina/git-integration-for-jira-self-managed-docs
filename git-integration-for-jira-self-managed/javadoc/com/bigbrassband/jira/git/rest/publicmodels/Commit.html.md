@@ -71,7 +71,7 @@ Returns git commit id, e.g. "34efa20372f0e2f0c9b705aacc57d7ad82e01426"
 
 
 ## getDate()
-Returns git commit date, e.g. "2022-07-15T00:20:58+0000"
+Returns git commit date in ISO format using timezone of the current user, e.g. "2022-07-15T00:20:58+0000"
 
 
 

@@ -1,4 +1,4 @@
-# Example of a script pinging reindex status. Use gijFacade.doReindexSynchronized(repoId) instead.
+# Example of a script pinging reindex status. gijFacade.doReindexSynchronized(repoId) does similar thing.
 
 ```
 import com.onresolve.scriptrunner.runner.customisers.WithPlugin

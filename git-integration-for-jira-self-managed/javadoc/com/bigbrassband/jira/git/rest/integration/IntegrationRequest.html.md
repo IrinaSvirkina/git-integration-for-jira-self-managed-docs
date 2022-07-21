@@ -200,10 +200,6 @@ Returns the property "Send email notifications" value.
 
 ## getSmartCommitsEnabled()
 Returns whether smart commits processing for the integration repositories is enabled.
- <br>
- GIJFacade.createIntegration(): Optional. Is true by default.
- <br>
- GIJFacade.updateIntegration(): Optional.
 
 
 
@@ -420,7 +416,8 @@ Sets the Origin of the Integration.
 
 
 ## setPassword(String)
-Sets new password for the git host. Leave blank and use PAT if 2FA is enabled.
+Sets new password for the git host. Leave blank and use PAT if 2FA is enabled on the git server.
+
  The IN password will be encrypted.
  Use initPassword() when none encryption is required.
  <br>
@@ -505,6 +502,10 @@ Sets the property "Send email notifications" for the Integration.
 
 ## setSmartCommitsEnabled(Boolean)
 Enables or disables smart commits processing.
+ <br><br>
+ GIJFacade.createIntegration(): Optional. Is true by default.
+ <br>
+ GIJFacade.updateIntegration(): Optional.
 
 ### **Parameters**
 * `smartCommitsEnabled`: new value for "Smart Commits" parameter
@@ -564,7 +565,7 @@ Sets type of the Integration. Available values are the following:
 
 
 ## setUsername(String)
-Sets as username for the git host. Leave blank and use PAT if 2FA is enabled.
+Sets as username for the git host. Leave blank and use PAT if 2FA is enabled on the git server.
 
 ### **Parameters**
 * `username`: 

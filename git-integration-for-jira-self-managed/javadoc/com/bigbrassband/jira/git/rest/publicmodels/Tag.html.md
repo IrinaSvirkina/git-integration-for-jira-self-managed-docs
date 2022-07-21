@@ -65,7 +65,7 @@ Tag information.
 
 # Methods
 ## getCommitId()
-Returns a commit Id the tag is created at.
+Returns the tag Id.
 
 
 
