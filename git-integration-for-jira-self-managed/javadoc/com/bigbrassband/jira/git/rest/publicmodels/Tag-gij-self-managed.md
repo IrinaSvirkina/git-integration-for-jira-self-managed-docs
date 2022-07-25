@@ -9,7 +9,7 @@ taxonomy:
 
 
 * Package [com.bigbrassband.jira.git.rest.publicmodels](README.html)
-*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [Tag](Tag.html)
+*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [Tag](Tag-gij-self-managed)
 
 Tag information.
 
@@ -19,7 +19,7 @@ Tag information.
 | Visibility | Signature |
 | --- | --- |
 | `public` | [Tag](#tag)() |
-| `public` | [Tag](#tagtag)([Tag](Tag.html) other) |
+| `public` | [Tag](#tagtag)([Tag](Tag-gij-self-managed) other) |
 | `public` | [Tag](#tagstring-string-integer-string-date-string-string-string-string)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  name,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitId,  *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  repoName,  *[Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html)*  creationDate,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  creationDateFormatted,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  message,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  committerName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  committerEmail) |
 
 #### Methods
