@@ -1,15 +1,7 @@
----
-
-title: Class GIJFacade
-description:
-taxonomy:
-    category: git-integration-for-jira-data-center
-
----
-
+# Interface GIJFacade
 
 * Package [com.bigbrassband.jira.git.services](README.html)
-* [GIJFacade](GIJFacade-gij-self-managed)
+* [GIJFacade](GIJFacade.html.md)
 
 This is the main facade to be used in ScriptRunner scripts.
 
@@ -18,30 +10,30 @@ This is the main facade to be used in ScriptRunner scripts.
 #### Methods
 | Type and modifiers | Method signature |
 | --- | --- |
-| `public` [Branch](scriptrunner/models/Branch-gij-self-managed) | [createBranch](#createbranchinteger-string-string)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  newBranchName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  baseBranchOrTag) |
-| `public` [Repository](../rest/publicmodels/Repository-gij-self-managed) | [createIntegration](#createintegrationintegrationrequest)([IntegrationRequest](../rest/integration/IntegrationRequest-gij-self-managed) params) |
-| `public` [PullRequest](scriptrunner/models/PullRequest-gij-self-managed) | [createPullRequest](#createpullrequestinteger-string-string-string-string)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  sourceBranchName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  targetBranchName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  title,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
-| `public` [Repository](../rest/publicmodels/Repository-gij-self-managed) | [createRepository](#createrepositoryrepository)([Repository](../rest/publicmodels/Repository-gij-self-managed) params) |
+| `public` [Branch](scriptrunner/models/Branch.html.md) | [createBranch](#createbranchinteger-string-string)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  newBranchName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  baseBranchOrTag) |
+| `public` [Repository](../rest/publicmodels/Repository.html.md) | [createIntegration](#createintegrationintegrationrequest)([IntegrationRequest](../rest/integration/IntegrationRequest.html.md) params) |
+| `public` [PullRequest](scriptrunner/models/PullRequest.html.md) | [createPullRequest](#createpullrequestinteger-string-string-string-string)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  sourceBranchName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  targetBranchName,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  title,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public` [Repository](../rest/publicmodels/Repository.html.md) | [createRepository](#createrepositoryrepository)([Repository](../rest/publicmodels/Repository.html.md) params) |
 | `public` `void` | [deleteBranch](#deletebranchinteger-string)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  branchName) |
 | `public` `boolean` | [deleteIntegration](#deleteintegrationinteger-boolean)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId, `boolean` deleteFiles) |
 | `public` `boolean` | [deleteRepository](#deleterepositoryinteger-boolean)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId, `boolean` deleteFiles) |
 | `public`  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  | [doReindex](#doreindexinteger)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId) |
 | `public` `boolean` | [doReindexSynchronized](#doreindexsynchronizedinteger)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Branch](scriptrunner/models/Branch-gij-self-managed)> | [getBranchesForIssue](#getbranchesforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Branch](scriptrunner/models/Branch-gij-self-managed)> | [getBranchesForIssue](#getbranchesforissuestring-boolean)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey, `boolean` forceAheadBehindCalculation) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Branch](scriptrunner/models/Branch.html.md)> | [getBranchesForIssue](#getbranchesforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Branch](scriptrunner/models/Branch.html.md)> | [getBranchesForIssue](#getbranchesforissuestring-boolean)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey, `boolean` forceAheadBehindCalculation) |
 | `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* < *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)* > | [getCommitIssues](#getcommitissuesinteger-string)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitHash) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Commit](../rest/publicmodels/Commit-gij-self-managed)> | [getCommitsForIssue](#getcommitsforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Commit](../rest/publicmodels/Commit-gij-self-managed)> | [getCommitsForIssue](#getcommitsforissuestring-boolean)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey,  *[Boolean](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html)*  showFiles) |
-| `public` [Repository](../rest/publicmodels/Repository-gij-self-managed) | [getIntegration](#getintegrationinteger)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  integrationId) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Repository](../rest/publicmodels/Repository-gij-self-managed)> | [getIntegrations](#getintegrations)() |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[PullRequest](scriptrunner/models/PullRequest-gij-self-managed)> | [getPullRequestsForIssue](#getpullrequestsforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
-| `public` [IndexStatusResponse](../rest/publicmodels/IndexStatusResponse-gij-self-managed) | [getReindexStatus](#getreindexstatusstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  threadId) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Repository](../rest/publicmodels/Repository-gij-self-managed)> | [getRepositories](#getrepositories)() |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Repository](../rest/publicmodels/Repository-gij-self-managed)> | [getRepositories](#getrepositoriesstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  projectKey) |
-| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Tag](../rest/publicmodels/Tag-gij-self-managed)> | [getTagsForIssue](#gettagsforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
-| `public` `void` | [updateCommitIssueChanges](#updatecommitissuechangesinteger-string-issuesassociationrequest)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitHash, [IssuesAssociationRequest](../rest/publicmodels/IssuesAssociationRequest-gij-self-managed) request) |
-| `public` [Repository](../rest/publicmodels/Repository-gij-self-managed) | [updateIntegration](#updateintegrationinteger-integrationrequest)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  id, [IntegrationRequest](../rest/integration/IntegrationRequest-gij-self-managed) repositoryWithNewParams) |
-| `public` [Repository](../rest/publicmodels/Repository-gij-self-managed) | [updateRepository](#updaterepositoryrepository)([Repository](../rest/publicmodels/Repository-gij-self-managed) newParams) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Commit](../rest/publicmodels/Commit.html.md)> | [getCommitsForIssue](#getcommitsforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Commit](../rest/publicmodels/Commit.html.md)> | [getCommitsForIssue](#getcommitsforissuestring-boolean)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey,  *[Boolean](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html)*  showFiles) |
+| `public` [Repository](../rest/publicmodels/Repository.html.md) | [getIntegration](#getintegrationinteger)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  integrationId) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Repository](../rest/publicmodels/Repository.html.md)> | [getIntegrations](#getintegrations)() |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[PullRequest](scriptrunner/models/PullRequest.html.md)> | [getPullRequestsForIssue](#getpullrequestsforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public` [IndexStatusResponse](../rest/publicmodels/IndexStatusResponse.html.md) | [getReindexStatus](#getreindexstatusstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  threadId) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Repository](../rest/publicmodels/Repository.html.md)> | [getRepositories](#getrepositories)() |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Repository](../rest/publicmodels/Repository.html.md)> | [getRepositories](#getrepositoriesstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  projectKey) |
+| `public`  *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* <[Tag](../rest/publicmodels/Tag.html.md)> | [getTagsForIssue](#gettagsforissuestring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public` `void` | [updateCommitIssueChanges](#updatecommitissuechangesinteger-string-issuesassociationrequest)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  repoId,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitHash, [IssuesAssociationRequest](../rest/publicmodels/IssuesAssociationRequest.html.md) request) |
+| `public` [Repository](../rest/publicmodels/Repository.html.md) | [updateIntegration](#updateintegrationinteger-integrationrequest)( *[Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html)*  id, [IntegrationRequest](../rest/integration/IntegrationRequest.html.md) repositoryWithNewParams) |
+| `public` [Repository](../rest/publicmodels/Repository.html.md) | [updateRepository](#updaterepositoryrepository)([Repository](../rest/publicmodels/Repository.html.md) newParams) |
 
 
 
@@ -64,7 +56,7 @@ Creates a branch in the repository.
 branch created
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -79,7 +71,7 @@ Connect to an integration.
 * `params`: params for the new integration
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -100,7 +92,7 @@ Creates a new pull request.
 ### **Returns**
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -118,7 +110,7 @@ Connects a new repository.
 ### **Throws**
 * *org.eclipse.jgit.api.errors.GitAPIException* 
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -136,7 +128,7 @@ Deletes the branch.
 * `branchName`: a name of the branch to be deleted
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -150,7 +142,7 @@ Delete an integration
 * `deleteFiles`: indicates whether the repositories folders are also deleted from the Jira server. If set to true, the repositories folders is deleted from the Jira server.
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -169,7 +161,7 @@ Deletes the existing repository from the Git Integration for Jira app repository
 - true always
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -189,7 +181,7 @@ Starts the reindex process in a separate thread and returns the result immediate
 - indexer thread ID (UUID), ex. "eafe58fc-d8de-42ff-8815-6fe5860b38d2"
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -208,7 +200,7 @@ Reindex a repository and waits for the end of the reindex.
 ### **Returns**
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -225,7 +217,7 @@ Returns list of branches associated with the issue.
 
 ### **Throws**
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 * *com.atlassian.jira.issue.index.IndexException* 
 
 
@@ -243,7 +235,7 @@ Returns list of branches associated with the issue.
 
 ### **Throws**
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 * *com.atlassian.jira.issue.index.IndexException* 
 
 
@@ -257,7 +249,7 @@ Returns issues which the git commit associated with.
 
 ### **Throws**
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 * *com.atlassian.jira.issue.index.IndexException* 
 
 
@@ -273,7 +265,7 @@ Returns commits information associated with the issue.
 * `issueKey`: Jira issue key. The issueKey must be valid and existent. Ex.: "TST-234"
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
 
 
@@ -286,7 +278,7 @@ Returns commits information (including files) associated with the issue.
 * `showFiles`: whether an information about files changed in the commit is collected and returned
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
 
 
@@ -298,7 +290,7 @@ Returns an integration by id.
 * `integrationId`: the integration id.
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -306,7 +298,7 @@ Returns an integration by id.
 Returns integrations connected.
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -318,7 +310,7 @@ Returns pull requests associated with the issue.
 
 ### **Throws**
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 * *com.atlassian.jira.issue.index.IndexException* 
 
 
@@ -335,7 +327,7 @@ Use this method to track messages for a particular reindex thread.
 - reindex status, messages, errors
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -345,7 +337,7 @@ Returns all repositories connected including disabled repositories and repositor
  See [script example](/git-integration-for-jira-self-managed/javadoc/examples/scriptrunner-example-getRepositories.groovy).
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -360,7 +352,7 @@ Returns repositories visible to users of the project.
 * `projectKey`: project key, e.g. "TST"
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -372,7 +364,7 @@ Returns tags associated with the issue.
 
 ### **Throws**
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 * *com.atlassian.jira.issue.index.IndexException* 
 
 
@@ -393,7 +385,7 @@ Changes the commit issues associations.
 
 ### **Throws**
 *  *[IOException](https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html)*  
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -412,7 +404,7 @@ Updated an integration.
 - the integration updated
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 
@@ -434,7 +426,7 @@ Updates the existing repository from the given settings.
 - repository updated
 
 ### **Throws**
-* [GIJException](../exceptions/GIJException-gij-self-managed) 
+* [GIJException](../exceptions/GIJException.html.md) 
 
 
 

@@ -1,15 +1,7 @@
----
-
-title: Class ChangeStr
-description:
-taxonomy:
-    category: git-integration-for-jira-data-center
-
----
-
+# Class CommitIssueChange.ChangeStr
 
 * Package [com.bigbrassband.jira.git.services.indexer.revisions](README.html)
-*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [ChangeStr](ChangeStr-gij-self-managed)
+*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [ChangeStr](ChangeStr.html.md)
 
 
 

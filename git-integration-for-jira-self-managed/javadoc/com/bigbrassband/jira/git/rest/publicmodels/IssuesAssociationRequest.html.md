@@ -1,15 +1,7 @@
----
-  
-title: Class IssuesAssociationRequest
-description:
-taxonomy:
-    category: git-integration-for-jira-data-center
-
----
-
+# Class IssuesAssociationRequest
 
 * Package [com.bigbrassband.jira.git.rest.publicmodels](README.html)
-*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [IssuesAssociationRequest](IssuesAssociationRequest-gij-self-managed)
+*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [IssuesAssociationRequest](IssuesAssociationRequest.html.md)
 
 
 
@@ -23,11 +15,11 @@ taxonomy:
 #### Methods
 | Type and modifiers | Method signature |
 | --- | --- |
-| `public` [IssuesAssociationRequest](IssuesAssociationRequest-gij-self-managed) | [addLink](#addlinkstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public` [IssuesAssociationRequest](IssuesAssociationRequest.html.md) | [addLink](#addlinkstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
 | `public`  *[List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)* < *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)* > | [getChangeStrs](#getchangestrs)() |
-| `public` [IssuesAssociationRequest](IssuesAssociationRequest-gij-self-managed) | [removeLink](#removelinkstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
+| `public` [IssuesAssociationRequest](IssuesAssociationRequest.html.md) | [removeLink](#removelinkstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  issueKey) |
 | `public` `void` | [setChangeStrs](#setchangestrslist)( *[List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)* < *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)* > changeStrs) |
-| `public`  *[List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)* <[CommitIssueChange](../../services/indexer/revisions/CommitIssueChange-gij-self-managed)> | [transform](#transformstring-string-int)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  author,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitHash, `int` commitTime) |
+| `public`  *[List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)* <[CommitIssueChange](../../services/indexer/revisions/CommitIssueChange.html.md)> | [transform](#transformstring-string-int)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  author,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitHash, `int` commitTime) |
 
 
 

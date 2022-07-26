@@ -1,15 +1,7 @@
----
-
-title: Class ReindexLogEntry
-description:
-taxonomy:
-    category: git-integration-for-jira-data-center
-
----
-
+# Class ReindexLogEntry
 
 * Package [com.bigbrassband.jira.git.services.async](README.html)
-*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [ReindexLogEntry](ReindexLogEntry-gij-self-managed)
+*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [ReindexLogEntry](ReindexLogEntry.html.md)
 
 Contains a reindex message.
 

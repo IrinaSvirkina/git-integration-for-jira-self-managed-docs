@@ -9,7 +9,7 @@ taxonomy:
 
 
 * Package [com.bigbrassband.jira.git.services.integration](README.html)
-* [IntegrationType](IntegrationType-gij-self-managed)
+* [IntegrationType](IntegrationType.html.md)
 
 Integration types supported.
 

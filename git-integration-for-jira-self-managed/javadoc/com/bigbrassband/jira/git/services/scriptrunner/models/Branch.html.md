@@ -1,15 +1,7 @@
----
-
-title: Class Branch
-description:
-taxonomy:
-    category: git-integration-for-jira-data-center
-
----
-
+# Class Branch
 
 * Package [com.bigbrassband.jira.git.services.scriptrunner.models](README.html)
-*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [Branch](Branch-gij-self-managed)
+*  *[Object](https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html)*  > [Branch](Branch.html.md)
 
 Branch information.
 
@@ -18,8 +10,8 @@ Branch information.
 #### Constructors
 | Visibility | Signature |
 | --- | --- |
-| `public` | [Branch](#branchstring-string-repository)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  name,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  externalUrl, [Repository](../../../rest/publicmodels/Repository-gij-self-managed) repository) |
-| `public` | [Branch](#branchstring-string-int-int-repository)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  name,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  externalUrl, `int` ahead, `int` behind, [Repository](../../../rest/publicmodels/Repository-gij-self-managed) repository) |
+| `public` | [Branch](#branchstring-string-repository)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  name,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  externalUrl, [Repository](../../../rest/publicmodels/Repository.html.md) repository) |
+| `public` | [Branch](#branchstring-string-int-int-repository)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  name,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  externalUrl, `int` ahead, `int` behind, [Repository](../../../rest/publicmodels/Repository.html.md) repository) |
 
 #### Methods
 | Type and modifiers | Method signature |
@@ -28,7 +20,7 @@ Branch information.
 | `public` `int` | [getBehind](#getbehind)() |
 | `public`  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  | [getExternalUrl](#getexternalurl)() |
 | `public`  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  | [getName](#getname)() |
-| `public` [Repository](../../../rest/publicmodels/Repository-gij-self-managed) | [getRepository](#getrepository)() |
+| `public` [Repository](../../../rest/publicmodels/Repository.html.md) | [getRepository](#getrepository)() |
 | `public` `boolean` | [isAheadBehindPresented](#isaheadbehindpresented)() |
 
 
