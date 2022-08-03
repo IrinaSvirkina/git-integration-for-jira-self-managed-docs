@@ -23,7 +23,7 @@ Git commit information.
 | `public`  *[List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)* <[ShortFileInfo](ShortFileInfo.html.md)> | [getFiles](#getfiles)() |
 | `public`  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  | [getMessage](#getmessage)() |
 | `public`  *[Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html)* < *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)* ,  *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)* > | [getNotes](#getnotes)() |
-| `public` *com.bigbrassband.jira.git.rest.publicmodels.Commit.Repository* | [getRepository](#getrepository)() |
+| `public` [RepositoryShortInfo](RepositoryShortInfo.html.md) | [getRepository](#getrepository)() |
 | `public` `void` | [setAuthor](#setauthorstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  author) |
 | `public` `void` | [setBranches](#setbranchescollection)( *[Collection](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html)* < *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)* > branches) |
 | `public` `void` | [setCommitId](#setcommitidstring)( *[String](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html)*  commitId) |
